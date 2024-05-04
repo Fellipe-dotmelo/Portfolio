@@ -513,13 +513,11 @@ mark,
 }
 
 .img-thumbnail {
-  padding: 0.55rem;
-  background-color: var(--dark);
-  border: 1px solid var(--gray);
-  border-radius: 0.25rem;
+  background-color: #fff;
+  border: 6.5px solid var(--gray);
+  border-radius: 0.5rem;
   max-width: 100%;
   height: auto;
-  background-position: 30% 40%;
 }
 
 .figure {
