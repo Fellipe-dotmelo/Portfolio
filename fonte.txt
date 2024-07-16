@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -33,12 +34,11 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
         <div class="container">
             <img class="header-img" src="assets/img/img-icons/marca.svg" alt="">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item">
@@ -60,7 +60,7 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- End of page navibation -->
 
     <!-- Page Header -->
@@ -70,8 +70,7 @@
                 <h6 class="title">Fellipe Melo</h6>
                 <p>Data Analitycs e Business Intelligence</p>
                 <div class="buttons pt-3">
-                    <button class="btn btn-dark rounded"><a href="Fellipe Melo - Data Analytics.pdf"
-                            download="Fellipe_Melo.pdf">DOWNLOAD CV</a></button>
+                    <button class="btn btn-dark rounded"><a href="Fellipe Melo - Data Analytics.pdf" download="Fellipe_Melo.pdf">DOWNLOAD CV</a></button>
                 </div>
 
                 <div class="socials mt-4">
@@ -102,18 +101,13 @@
                     <div class="pl-md-4 col-md-9">
                         <h6 class="title">Fellipe Melo</h6>
                         <p class="subtitle">Resumo</p>
-                        <p>Sou formado em Análise e Desenvolvimento de Sistemas pela Universidade Estácio, estou
-                            atualmente realizando uma Especialização em Big Data para Business Analytics e Intelligence na Universidade Católica de Brasília.
-                        </p>
-                        <p>
-                            Tenho mais de 3 anos de experiência na área de Tecnologia, onde atuei como Suporte Técnico, adquirindo habilidades valiosas em resolução de problemas, persuasão e ótima comunicação.
-                        </p>
-                        <p>
-                            Atuei nos últimos meses na área de Dados e então, redirecionei meu foco visando crescimento na área, passei a me envolver, em processos de ETL, análise exploratória de dados e criação de Dashboards. Utilizo ferramentas como Excel, Power BI e T-SQL no SQL Server para extrair insights significativos e impulsionar a tomada de decisões informadas.
-                        </p>
-                        <p>
-                            Por isso, decidi iniciar a minha especialização visando ampliar meu conhecimento e obter o certificado na área. Estou determinado a solidificar minha jornada como Analista de Dados, aplicando meu conhecimento técnico e minha paixão pela Análise de Dados para impulsionar o sucesso dos negócios.
-                        </p>
+                        <p>Formação em Análise e Desenvolvimento de Sistemas pela UNESA (Universidade Estácio de Sá),
+                            atuei na área de Tecnologia, em específico com suporte técnico. Realizando Especialização em
+                            Big Data para Business Analytics e Intelligence na UCB (Universidade Católica de Brasília),
+                            visando me tornar um Analista de Dados. Nos últimos meses experiênciei no meu último
+                            emprego, tarefas na Área de Dados, atuando em processos de ETL, análise exploratória de
+                            dados, com ferramentas como: Excel, Power BI, SQL Server e Python. Experienciei também na
+                            faculdade projetos que envolviam a criação de Dashboards e exploração de Dados.</p>
                         <div class="buttons">
                             <button class="btn btn-dark rounded"><a href="#contato">CONTATE-ME</a></button>
                         </div>
@@ -133,14 +127,21 @@
 
         <section class="empresas-container" id="experiencia">
             <div class="experiencia-topicos">
+                <!-- XP1 -->
                 <div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
-                            <iframe title="ProjetoCurso" width="600" height="400"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiYjFlMGUxYmUtODQ1ZS00MzkxLTk2NTAtYmM1MTZhMThiNjYzIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/dash-vendas-eletronicos/analise-vendas-capa.png">
+                                <img src="assets/img/img-dashboards/dash-vendas-eletronicos/dash-vendas-eletronicos.png">
+                                <img src="assets/img/img-dashboards/dash-vendas-eletronicos/detail_marca.jpg">
+                                <img src="assets/img/img-dashboards/dash-vendas-eletronicos/detail_marca.jpg">
+                                <img src="assets/img/img-dashboards/dash-vendas-eletronicos/tooltip-marca-faturamento.jpg">
+                                <img src="assets/img/img-dashboards/dash-vendas-eletronicos/tooltip-pais-faturamento.jpg">
                             </abbr>
                         </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
                         <h3>Dashboard - Vendas de Eletrônicos</h3>
@@ -156,35 +157,54 @@
                     </div>
                 </div>
 
+                <!-- XP2-->
                 <div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
-                            <iframe title="locacao-veiculos" width="600" height="400"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiMjkwOWQwZTYtZDYyMi00Zjg0LWIwZjUtNzYyNGNkNjkyMzFhIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/aba-locacao-veiculos.png"
+                                    alt="aba de locação de veículos">
+                                <img src="assets/img/img-dashboards/dashboard-cliente.png"
+                                    alt="aba de visualização de clientes de veículos">
+                            </abbr>
                         </div>
-                        <div class="card-info">
-                            <h3>Dashboard - Vendas de Veículos</h3>
-                            <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
-                                DAX, power query.
-                                A intenção do projeto é acompanhar cada detalhe da locadora de veículos.
-                            </p>
-                            <ul class="empresa-habilidades">
-                                <li>EXCEL</li>
-                                <li>POWER BI</li>
-                                <li>SQL SERVER</li>
-                            </ul>
-                        </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Dashboard - Vendas de Veículos</h3>
+                        <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
+                            DAX, power query.
+                            A intenção do projeto é acompanhar cada detalhe da locadora de veículos.
+                        </p>
+                        <ul class="empresa-habilidades">
+                            <li>EXCEL</li>
+                            <li>POWER BI</li>
+                            <li>SQL SERVER</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
-                            <iframe title="dashboard-universidade" width="600" height="400"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiZTY1NGYwNGEtOTNmOS00MWExLWFiZmYtNzJiNjViNDlhOTEwIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/dash-universidade/dash-universidade-capa.png"
+                                    alt="capa do dashboard">
+                                <img src="assets/img/img-dashboards/dash-universidade/dash-universidade-campus.png"
+                                    alt="informações por campus">
+                                <img src="assets/img/img-dashboards/dash-universidade/dash-universidade-campus-inadimplencia.png"
+                                    alt="informações por campus e a inadimplência por unidade">
+                                <img src="assets/img/img-dashboards/dash-universidade/dash-universidade-financeiro.png"
+                                    alt="parte financeira da universidade">
+                                <img src="assets/img/img-dashboards/dash-universidade/dash-universidade-financeiro-inadimplencia.png"
+                                    alt="parte financeira da universidade e a inadimplência de diversas formas.">
+                                <img src="assets/img/img-dashboards/dash-universidade/dash-universidade-geral-resumo.png"
+                                    alt="tela generalista do projeto, um pouco de tudo.">
+                            </abbr>
                         </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
                         <h3>Dashboard - Universidade</h3>
@@ -202,13 +222,17 @@
                     </div>
                 </div>
 
+                <!-- XP3 -->
                 <div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
-                            <iframe title="acompanhamento_RH" width="600" height="400"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiODI4YzcwM2EtNTk5ZC00NGE2LThjNzEtNmRhYzJiMzc0NTQ4IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/dashboard-acompanhamento-rh.png"
+                                    alt="Dashboard de Gestão de Pessoas">
+                            </abbr>
                         </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
                         <h3>Dashboard - Acompanhamento RH</h3>
@@ -223,13 +247,17 @@
                     </div>
                 </div>
 
+                <!-- XP4 -->
                 <div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
-                            <iframe title="dashboard_campeonato_brasileiro" width="600" height="400"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiNWY3NTE4ZWQtODVmMy00NWQzLWFkN2YtNTY3ZWE2YWJhODFmIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/dash-brasileirão.jpeg"
+                                    alt="Dashboard do campeonato brasileiro de 2021">
+                            </abbr>
                         </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
                         <h3>Dashboard - Brasileirão de 2021</h3>
@@ -245,13 +273,19 @@
                     </div>
                 </div>
 
+                <!-- XP5 -->
                 <div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
-                            <iframe title="dashboard_vendas" width="600" height="400"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiNDNkYTUwYmMtY2U4Ny00YTdkLThmZGQtOGI1Y2VlOTBlNWI5IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/dashboard-vendas-capa.png"
+                                    alt="aba de locação de veículos">
+                                <img src="assets/img/img-dashboards/dashboard-vendas-relatorio.png" height="335"
+                                    width="600" alt="aba de visualização de clientes de veículos">
+                            </abbr>
                         </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
                         <h3>Dashboard - Vendas de Veículos</h3>
@@ -266,16 +300,20 @@
                     </div>
                 </div>
 
+                <!-- XP4 -->
                 <div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
-                            <iframe title="dashboard_financeiro" width="600" height="373.5"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiNzAwZTZhMzEtZjBhNy00ZmQ0LTlmNjgtNjFjOTRmYTgwZWMzIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/dashboard-financeiro-hs.png"
+                                    alt="vendas por região">
+                            </abbr>
                         </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Financeiro</h3>
+                        <h3>Dashboard - Vendas</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros e funções.
                         </p>
                         <ul class="empresa-habilidades">
@@ -285,13 +323,41 @@
                     </div>
                 </div>
 
+
+
+                <!-- XP5 -->
                 <div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
-                            <iframe title="dashboard_producao" width="600" height="373.5"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiYmJjN2JkMzUtYTAxNS00NDNiLWI5MzMtMTIxMzY1MGRiZTRkIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/dashboard-vendas-hs.png" alt="vendas por região">
+                            </abbr>
                         </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Dashboard - Vendas</h3>
+                        <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros e funções.
+                        </p>
+                        <ul class="empresa-habilidades">
+                            <li>EXCEL</li>
+                            <li>POWER BI</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- XP5 -->
+                <div class="empresa">
+                    <div class="card-imagem slider">
+                        <div class="slider">
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/dashboard-producao-hs.png" alt="vendas por região">
+                            </abbr>
+                        </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
                         <h3>Dashboard - Produção</h3>
@@ -306,16 +372,21 @@
                     </div>
                 </div>
 
+                <!-- XP6 -->
                 <div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
-                            <iframe title="dashboard_rh_hashtag" width="600" height="373.5"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiMWVkODg1YTMtMzZmMC00NDlhLTk2YzUtYTA5NjgxZTdiMzNmIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
+                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
+                                <img src="assets/img/img-dashboards/dashboard-rh-hs.jpeg" alt="vendas por região">
+                                <img src="assets/img/img-dashboards/dashboard-rh-tooltip-hs.jpeg" height="335"
+                                    width="600" alt="vendas por região">
+                            </abbr>
                         </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Recursos Humanos</h3>
+                        <h3>Dashboard - Recursos Humano</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros, funções DAX
                             e tooltip.
                         </p>
@@ -327,70 +398,8 @@
                     </div>
                 </div>
 
+                <!-- XP8 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
-                            <iframe title="logistica_faturamento" width="600" height="373.5"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiMTE4NGZhNGEtYjA3ZS00ZTBiLTg2NzQtZWI2MWI3NDk4ZTdkIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Dashboard - Faturamento & Logística</h3>
-                        <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros, funções
-                            DAX.
-                        </p>
-                        <ul class="empresa-habilidades">
-                            <li>EXCEL</li>
-                            <li>POWER BI</li>
-                            <li>DAX</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
-                            <iframe title="base_axon" width="600" height="373.5"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiMWZkN2UxYzEtZmU4ZS00ODk1LTgxZmEtYWI5ZjVhNDk1OTk3IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
-                                frameborder="0" allowFullScreen="true"></iframe>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Faturamento & Logística | Axon Health Care</h3>
-                        <p class="empresa-descricao">Dashboard desenvolvido no Power BI para o processo seletivo da
-                            empresa de produtos hospitalares Axon Health Care, com uso de filtros, funções DAX e Figma
-                            para monstagem do layout.
-                        </p>
-                        <ul class="empresa-habilidades">
-                            <li>EXCEL</li>
-                            <li>POWER BI</li>
-                            <li>FIGMA</li>
-                            <li>DAX</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
-                            <iframe title="Uniao Brasil - Cúpula" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTNkODZjMDgtMjkwOC00YjgyLThmMGEtY2ZkN2YyNWEyMTBhIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" frameborder="0" allowFullScreen="true"></iframe>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Dashboard - Filiados União Brasil</h3>
-                        <p class="empresa-descricao">Dashboard desenvolvido no Power BI para acompanhamento de filiações do Partido União Brasil, com uso de filtros, funções DAX e Figma para monstagem do layout.
-                        </p>
-                        <ul class="empresa-habilidades">
-                            <li>EXCEL</li>
-                            <li>POWER BI</li>
-                            <li>FIGMA</li>
-                            <li>DAX</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--<div class="empresa">
                     <div class="card-imagem slider">
                         <div class="slider">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
@@ -415,7 +424,8 @@
                             <li>Matplotlib</li>
                         </ul>
                     </div>
-                </div>-->
+                </div>
+
             </div>
         </section>
 
@@ -434,11 +444,11 @@
                     <ul class="curso-lista">
                         <li class="curso">
                             <span class="curso-tipo">Especialização</span>
-                            <h3 class="curso-qual">Análise de Dados e BI</h3>
+                            <h3 class="curso-qual">Análise de Dados para BI e BA</h3>
                             <span class="curso-instituicao">UNIVERSIDADE CATÓLICA DE BRASÍLIA</span>
                             <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 60%;"
-                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span></span></div>
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span></span></div>
                             </div>
                         </li>
                         <li class="curso">
@@ -474,7 +484,7 @@
                         <div class="cursos">
                             <h3>Cursos Intensivos</h3>
                             <ul>
-                                <span class="curso-instituicao">IFRS</span>
+                                <span class="curso-instituicao">Senac</span>
                                 <li>Administrador de Banco de Dados<span>200 horas</span></li>
                                 <span class="curso-instituicao">Origamid</span>
                                 <li>UX Design & UI Design com Figma<span>17 horas</span></li>
