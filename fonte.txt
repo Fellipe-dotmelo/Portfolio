@@ -129,8 +129,8 @@
             <div class="experiencia-topicos">
                 <!-- XP1 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dash-vendas-eletronicos/analise-vendas-capa.png">
                                 <img src="assets/img/img-dashboards/dash-vendas-eletronicos/dash-vendas-eletronicos.png">
@@ -159,8 +159,8 @@
 
                 <!-- XP2-->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/aba-locacao-veiculos.png"
                                     alt="aba de locação de veículos">
@@ -186,8 +186,8 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dash-universidade/dash-universidade-capa.png"
                                     alt="capa do dashboard">
@@ -224,8 +224,8 @@
 
                 <!-- XP3 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-acompanhamento-rh.png"
                                     alt="Dashboard de Gestão de Pessoas">
@@ -249,8 +249,8 @@
 
                 <!-- XP4 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dash-brasileirão.jpeg"
                                     alt="Dashboard do campeonato brasileiro de 2021">
@@ -275,8 +275,8 @@
 
                 <!-- XP5 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-vendas-capa.png"
                                     alt="aba de locação de veículos">
@@ -302,8 +302,8 @@
 
                 <!-- XP4 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-financeiro-hs.png"
                                     alt="vendas por região">
@@ -327,8 +327,8 @@
 
                 <!-- XP5 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-vendas-hs.png" alt="vendas por região">
                             </abbr>
@@ -350,8 +350,8 @@
 
                 <!-- XP5 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-producao-hs.png" alt="vendas por região">
                             </abbr>
@@ -374,8 +374,8 @@
 
                 <!-- XP6 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-rh-hs.jpeg" alt="vendas por região">
                                 <img src="assets/img/img-dashboards/dashboard-rh-tooltip-hs.jpeg" height="335"
@@ -400,8 +400,8 @@
 
                 <!-- XP8 -->
                 <div class="empresa">
-                    <div class="card-imagem slider">
-                        <div class="slider">
+                    <div class="card-imagem slider  iframe-container">
+                        <div class="slider  iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dash-pandas-python.png"
                                     alt="aba de locação de veículos" height="335">

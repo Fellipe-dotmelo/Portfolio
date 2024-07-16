@@ -1,37 +1,37 @@
-    // Seleciona todos os sliders
-    const sliders = document.querySelectorAll('.slider');
+    // Seleciona todos os slider  iframe-containers
+    const slider  iframe-containers = document.querySelectorAll('.slider  iframe-container');
 
-    // Itera sobre cada slider
-    sliders.forEach(slider => {
+    // Itera sobre cada slider  iframe-container
+    slider  iframe-containers.forEach(slider  iframe-container => {
       // Inicializa o índice do slide atual como 0
       let slideIndex = 0;
       // Exibe o slide inicial
-      showSlide(slider, slideIndex);
+      showSlide(slider  iframe-container, slideIndex);
 
       // Seleciona os botões de navegação
-      const prevBtn = slider.parentElement.querySelector('.prev');
-      const nextBtn = slider.parentElement.querySelector('.next');
+      const prevBtn = slider  iframe-container.parentElement.querySelector('.prev');
+      const nextBtn = slider  iframe-container.parentElement.querySelector('.next');
 
       // Adiciona ouvintes de eventos para os botões de navegação
       prevBtn.addEventListener('click', () => {
         // Exibe o slide anterior
-        showSlide(slider, slideIndex -= 1);
+        showSlide(slider  iframe-container, slideIndex -= 1);
       });
 
       nextBtn.addEventListener('click', () => {
         // Exibe o próximo slide
-        showSlide(slider, slideIndex += 1);
+        showSlide(slider  iframe-container, slideIndex += 1);
       });
 
       // Adiciona ouvintes de eventos de toque
-      slider.addEventListener('touchstart', handleTouchStart, false);
-      slider.addEventListener('touchmove', handleTouchMove, false);
+      slider  iframe-container.addEventListener('touchstart', handleTouchStart, false);
+      slider  iframe-container.addEventListener('touchmove', handleTouchMove, false);
     });
 
     // Função para exibir o slide atual
-    function showSlide(slider, n) {
-      // Seleciona todas as imagens dentro do slider
-      const slides = slider.querySelectorAll('img');
+    function showSlide(slider  iframe-container, n) {
+      // Seleciona todas as imagens dentro do slider  iframe-container
+      const slides = slider  iframe-container.querySelectorAll('img');
       // Obtém o número total de slides
       const totalSlides = slides.length;
 
@@ -77,11 +77,11 @@
     }
 
     // Função para exibir o próximo slide
-    function showNextSlide(slider) {
-      showSlide(slider, slideIndex + 1);
+    function showNextSlide(slider  iframe-container) {
+      showSlide(slider  iframe-container, slideIndex + 1);
     }
 
     // Função para exibir o slide anterior
-    function showPrevSlide(slider) {
-      showSlide(slider, slideIndex - 1);
+    function showPrevSlide(slider  iframe-container) {
+      showSlide(slider  iframe-container, slideIndex - 1);
     }
