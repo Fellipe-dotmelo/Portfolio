@@ -58,7 +58,7 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -575,6 +575,15 @@ pre code {
   overflow-y: scroll;
 }
 
+#about p {
+  text-align: justify;
+}
+
+#about {
+  background-color: var(--dark);
+  color: #fff;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -583,7 +592,7 @@ pre code {
   margin-left: auto;
 }
 
-/*aqui começa os slider  iframe-containers*/
+/*aqui começa osiframe-containers*/
 .experiencia {
   max-width: 1300px;
   padding: 40px 0px;
@@ -593,18 +602,39 @@ pre code {
   gap: 40px;
 }
 
-.experiencia-texto {
-  font-size: 1.5rem;
+.terminal {
+  font-size: 24px;
+  padding: 0 15px;
+  font-size: 1.30rem;
   line-height: 1.25;
   max-width: 100ch;
+  font-family: 'Fira Code', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00ff00;
+}
+
+/* Estilo da barrinha piscante */
+.cursor-terminal {
+  display: inline-block;
+  width: 10px;
+  background-color: #00ff00;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 /*Experiência - Empresas*/
 .experiencia-topicos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   /* Cada par de itens ocupa duas colunas */
-  gap: 12px;
+  gap: 15px;
   /* Espaçamento entre os pares de itens */
   max-width: 1300px;
   padding: 100px 50px;
@@ -615,65 +645,17 @@ pre code {
   position: relative;
   /* Adiciona posição relativa para o elemento pai */
   flex-wrap: wrap;
-  margin-bottom: 5px;
   /* Adiciona espaçamento vertical entre as empresas */
-  border: solid 0.25px #ccc;
   border-radius: 10px;
 }
 
 .card-imagem {
   position: relative;
-  min-width: 200px;
-  min-height: 300px;
-  /* Ajuste a altura conforme necessário */
-  overflow: hidden;
-}
-
-.card-imagem .slider  iframe-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.card-imagem .slider  iframe-container img {
-  object-fit: cover;
-  /* Ajusta a imagem para preencher completamente a div, mantendo a proporção */
-  object-position: center;
-  /* Centraliza a imagem dentro da div */
-  padding: 1px 1px;
-  border-radius: 10px 10px 0 0;
-}
-
-
-.card-imagem .prev,
-.card-imagem .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 1;
-}
-
-.card-imagem .prev {
-  left: 0;
-}
-
-.card-imagem .next {
-  right: 0;
-}
-
-.card-info {
-  padding: 12px;
-  box-sizing: border-box;
 }
 
 .card-info a {
   text-decoration: none;
-  color: #000;
+  color: var(--light);
 }
 
 .empresa-titulo {
@@ -681,7 +663,11 @@ pre code {
 }
 
 .empresa-descricao {
+  font-size: 1.115rem;
+  line-height: 1.4;
   margin-bottom: 10px;
+  position: relative;
+  color: var(--light)
 }
 
 
@@ -689,11 +675,12 @@ pre code {
 .iframe-container {
   position: relative;
   width: 100%;
-  padding-bottom:0;
+  padding-bottom: 0;
   /* Proporção de 16:9 */
   height: 277px;
   overflow: hidden;
-  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .iframe-container iframe {
@@ -707,24 +694,38 @@ pre code {
 
 /* Estilos para o card */
 .card-info {
-  padding: 15px;
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 20px;
+  border-radius: 0 0 5px 5px;
+  /* Aplica as bordas de forma eficiente */
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e);
+  opacity: 0.95;
+  width: 100%;
+  /* Define um tamanho fixo para a largura */
+  height: 320px;
+  /* Define um tamanho fixo para a altura */
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.card-info p {
+  text-align: justify;
 }
 
 .empresa-habilidades {
   list-style: none;
   padding: 0;
+  left: 35;
 }
 
 .empresa-habilidades li {
   display: inline-block;
-  background-color: #0078d7;
-  color: #000;
+  font-size: .875rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+  background-color: var(--light);
   padding: 5px 10px;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-right: 5px;
 }
 
@@ -745,12 +746,6 @@ pre code {
   list-style: none;
 }
 
-.empresa-habilidades li {
-  background-color: #f0f0f0;
-  padding: 5px 10px;
-  border-radius: 20px;
-}
-
 .empresa img {
   max-width: 100%;
 }
@@ -761,61 +756,9 @@ pre code {
   color: var(--cor-empresa-texto);
 }
 
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  /* Esconde o texto padrão das setas */
-  width: 20px;
-  /* Largura das setas */
-  height: 20px;
-  /* Altura das setas */
-  background: url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-arrow.png') no-repeat;
-  /* Imagem das setas */
-  background-size: 20px 20px;
-  /* Tamanho da imagem das setas */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.slick-prev {
-  left: 10px;
-  /* Alinha a seta esquerda */
-}
-
-.slick-next {
-  right: 10px;
-  /* Alinha a seta direita */
-}
-
-/*aqui termina os slider  iframe-containers*/
-
-/*repetição de imagens*/
-.background-container {
-  background-image: url('../../data-ba.jpg');
-  /* Adicione a mesma imagem duas vezes */
-  background-color: #cccccc;
-  /* Usada se a imagem não estiver disponível */
-  height: 275px;
-  width: 100%;
-  background-position: center, center;
-  /* Centralize as imagens */
-  background-size: auto;
-  background-size: 695px 400px;
-  background-repeat: repeat-x;
-}
-
-/*repetição de imagens*/
-
+/*aqui termina osiframe-containers*/
 
 /*aqui começa o espaço de formação*/
-
-.borda-separadora {
-  border-bottom: solid 1px var(--dark);
-  margin-top: -75px;
-}
-
 
 /*animacao do texto da formação*/
 .container-bouncing-balls {
@@ -900,20 +843,7 @@ pre code {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-}
-
-/* Estilo padrão para o grafico-container */
-.grafico-container {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -85%);
-  max-width: 350px;
-  /* Ajuste conforme necessário */
-  max-height: 200px;
-  color: var(--light);
-  display: block;
-  /* Oculta o grafico-container inicialmente */
+  opacity: 0.95;
 }
 
 /* Estilo para exibir o grafico-container quando o item de curso está em foco */
@@ -1104,11 +1034,11 @@ pre code {
     gap: 40px;
   }
 
-  .card-imagem .slider  iframe-container img {
+  .card-imagem .iframe-container img {
     object-fit: cover;
     object-position: center;
     border-radius: 10px 10px 0 0;
-    min-width: 75%;
+    min-width: 85%;
   }
 
   .experiencia-topicos {
@@ -1812,6 +1742,92 @@ pre code {
 
   .offset-sm-11 {
     margin-left: 91.66667%;
+  }
+}
+
+#skills {
+  background-color: #ff7a57;
+  padding: 40px 0;
+}
+
+#skills h3 {
+  font-weight: 500;
+  color: #FFF
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  /* Espaço entre os itens */
+}
+
+.skill-box {
+  flex: 1 1 calc(20% - 20px);
+  /* Cada item ocupa 20% da linha menos o espaço entre eles */
+  background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e);
+  opacity: 0.95;
+  border-radius: 8px;
+  color: #ffffff;
+  /* Cor do texto em branco */
+  text-align: center;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  /* Garante que o padding seja incluído no cálculo da largura/altura */
+}
+
+.skill-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.skill-box h5 {
+  text-align: left;
+}
+
+.skill-box p {
+  font-size: 0.9rem;
+  flex-grow: 1;
+  text-align: left;
+  text-align: justify;
+}
+
+/* Apenas em telas maiores (largura maior que 992px) */
+@media (min-width: 992px) {
+  .skill-box {
+    min-height: 350px;
+    /* Define uma altura mínima consistente */
+  }
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .skill-box {
+    flex: 1 1 calc(33.33% - 20px);
+    /* Em telas grandes, 3 itens por linha */
+  }
+}
+
+@media (max-width: 992px) {
+  .skill-box {
+    flex: 1 1 calc(50% - 20px);
+    /* Em telas médias, 2 itens por linha */
+    min-height: auto;
+    /* Remove a altura mínima em telas menores */
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-box {
+    flex: 1 1 100%;
+    /* Em telas pequenas, 1 item por linha */
+    min-height: auto;
+    /* Remove a altura mínima em telas menores */
   }
 }
 
@@ -5243,7 +5259,7 @@ input[type="button"].btn-block {
   outline: none;
 }
 
-.custom-range:focus::-webkit-slider  iframe-container-thumb {
+.custom-range:focus::-webkit-iframe-container-thumb {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 122, 87, 0.25);
 }
 
@@ -5259,7 +5275,7 @@ input[type="button"].btn-block {
   border: 0;
 }
 
-.custom-range::-webkit-slider  iframe-container-thumb {
+.custom-range::-webkit-iframe-container-thumb {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
@@ -5273,17 +5289,17 @@ input[type="button"].btn-block {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .custom-range::-webkit-slider  iframe-container-thumb {
+  .custom-range::-webkit-iframe-container-thumb {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.custom-range::-webkit-slider  iframe-container-thumb:active {
+.custom-range::-webkit-iframe-container-thumb:active {
   background-color: white;
 }
 
-.custom-range::-webkit-slider  iframe-container-runnable-track {
+.custom-range::-webkit-iframe-container-runnable-track {
   width: 100%;
   height: 0.5rem;
   color: transparent;
@@ -5372,11 +5388,11 @@ input[type="button"].btn-block {
   border-radius: 1rem;
 }
 
-.custom-range:disabled::-webkit-slider  iframe-container-thumb {
+.custom-range:disabled::-webkit-iframe-container-thumb {
   background-color: #adb5bd;
 }
 
-.custom-range:disabled::-webkit-slider  iframe-container-runnable-track {
+.custom-range:disabled::-webkit-iframe-container-runnable-track {
   cursor: default;
 }
 
@@ -5483,7 +5499,6 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: #ff7a57;
 }
 
 .nav-fill .nav-item {
@@ -10234,7 +10249,7 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 3rem !important;
+  margin-top: 0rem !important;
 }
 
 .mr-5,
@@ -10244,7 +10259,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .ml-5,
@@ -12648,6 +12663,7 @@ h6 {
 }
 
 .section-title {
+  ] color: white;
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
 }
 
@@ -12888,7 +12904,8 @@ i {
   max-width: 1000px;
   margin: 0 auto 150px;
   z-index: 99;
-  background: #fff;
+  background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e);
+  opacity: 0.95;
 }
 
 .contact .form {
@@ -13073,7 +13090,9 @@ i {
 }
 
 .page-footer {
-  background: #fcfdff;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e);
+  opacity: 0.95;
 }
 
 .page-footer .row {
@@ -13108,7 +13127,7 @@ i {
 }
 
 .header {
-  height: 94vh;
+  height: 79vh;
   min-height: 650px;
   border-bottom: 1px solid #dee2e6;
 }
@@ -13152,8 +13171,8 @@ i {
 }
 
 .header .container .img-holder {
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 85%;
+  max-width: 85%;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -13174,7 +13193,6 @@ i {
 
 .header .container .img-holder img {
   max-width: 100%;
-  max-width: 620px;
   -webkit-filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
   filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
   margin-left: auto;

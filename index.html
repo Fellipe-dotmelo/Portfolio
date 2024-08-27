@@ -11,6 +11,7 @@
     <title>Fellipe Melo</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -22,27 +23,32 @@
 
     <script src="https://kit.fontawesome.com/24defec40b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/js/curso-percentual.js"></script>
     <!-- Bootstrap + Steller main styles -->
     <link rel="stylesheet" href="assets/css/steller.css">
+    <link rel="stylesheet" href="assets/css/style-slider.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- Page navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+    <nav class="navbar navbar-expand-lg fixed-top logo" data-spy="affix" data-offset-top="0" style="background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e);
+  opacity: 0.95;">
         <div class="container">
             <img class="header-img" src="assets/img/img-icons/marca.svg" alt="">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+                <div class="div-slider"></div>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Sobre</a>
@@ -57,6 +63,9 @@
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
+            </div>
+            <div class="logo">
+                <a href="#"></a>
             </div>
         </div>
     </nav>
@@ -87,49 +96,9 @@
                 </div>
             </div>
             <div class="img-holder">
-                <img src="assets/img/img-profile/profile-fellps.png" alt="foto de perfil">
+                <img src="assets/img/img-profile/Fellipe.png" alt="foto de perfil">
             </div>
         </div>
-
-        <!-- About section -->
-        <section id="about" class="section mt-3">
-            <div class="container mt-5">
-                <div class="row text-center text-md-left">
-                    <div class="col-md-3">
-                        <img src="assets/img/img-profile/profile-focus.png" alt="foto de perfil"
-                            class="img-thumbnail mb-4">
-                    </div>
-                    <div class="pl-md-4 col-md-9">
-                        <h6 class="title">Fellipe Melo</h6>
-                        <p class="subtitle">Resumo</p>
-                        <p>Sou formado em Análise e Desenvolvimento de Sistemas pela Universidade Estácio, estou
-                            atualmente realizando uma Especialização em Big Data para Business Analytics e Intelligence
-                            na Universidade Católica de Brasília.
-                        </p>
-                        <p>
-                            Tenho mais de 3 anos de experiência na área de Tecnologia, onde atuei como Suporte Técnico,
-                            adquirindo habilidades valiosas em resolução de problemas, persuasão e ótima comunicação.
-                        </p>
-                        <p>
-                            Atuei nos últimos meses na área de Dados e então, redirecionei meu foco visando crescimento
-                            na área, passei a me envolver, em processos de ETL, análise exploratória de dados e criação
-                            de Dashboards. Utilizo ferramentas como Excel, Power BI e T-SQL no SQL Server para extrair
-                            insights significativos e impulsionar a tomada de decisões informadas.
-                        </p>
-                        <p>
-                            Por isso, decidi iniciar a minha especialização visando ampliar meu conhecimento e obter o
-                            certificado na área. Estou determinado a solidificar minha jornada como Analista de Dados,
-                            aplicando meu conhecimento técnico e minha paixão pela Análise de Dados para impulsionar o
-                            sucesso dos negócios.
-                        </p>
-                        <div class="buttons">
-                            <button class="btn btn-dark rounded"><a href="#contato">CONTATE-ME</a></button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section id="animacao">
             <div class="container-bouncing-balls">
@@ -139,19 +108,98 @@
             </div>
         </section>
 
-        <section class="empresas-container" id="experiencia">
+        <section id="skills" class="section mt-3">
+            <div class="container mt-5">
+                <h3>Principais Habilidades:</h3>
+            </div>
+            <div class="container mt-5">
+                <div class="skills-row">
+                    <div class="skill-box text-white">
+                        <img src="assets/img/skills/painel 1.png" alt="Painel">
+                        <h5 class="curso-tipo">DATAVIZ</h5>
+                        <p>Desenvolvimento de dashboards interativos e visuais usando ferramentas como Power BI,
+                            permitindo uma compreensão clara e rápida dos dados para facilitar a tomada de decisões
+                            estratégicas.</p>
+                    </div>
+                    <div class="skill-box bg-secondary text-white">
+                        <img src="assets/img/skills/analise-de-dados 1.png" alt="Análise de Dados">
+                        <h5 class="curso-tipo">ANÁLISE DE DADOS</h5>
+                        <p>Implementação de soluções analíticas avançadas, otimizando processos, economizando recursos.
+                            Utilizo ferramentas como SQL Server e Power BI para transformar dados brutos em insights
+                            valiosos.</p>
+                    </div>
+                    <div class="skill-box bg-secondary text-white">
+                        <img src="assets/img/skills/python 1.png" alt="Python">
+                        <h5 class="curso-tipo">PYTHON</h5>
+                        <p>Automatização de processos de análise de dados e construção de modelos preditivos com Python,
+                            usando bibliotecas como Pandas, NumPy e Matplotlib para manipulação e visualização de dados.
+                        </p>
+                    </div>
+                    <div class="skill-box bg-secondary text-white">
+                        <img src="assets/img/skills/servidor-sql 1.png" alt="Servidor SQL">
+                        <h5 class="curso-tipo">SQL</h5>
+                        <p>Desenvolvimento de consultas eficientes e complexas em SQL para extrair, transformar e
+                            carregar dados (ETL), otimizando bancos de dados para suportar operações de análise e
+                            geração de relatórios.</p>
+                    </div>
+                    <div class="skill-box bg-secondary text-white">
+                        <img src="assets/img/skills/ETL-WHITE.png" alt="ETL">
+                        <h5 class="curso-tipo">ETL</h5>
+                        <p class="empresa-descricao">Processo envolve coletar dados de várias fontes, transformá-los
+                            conforme as necessidades do
+                            negócio, e carregá-los em um banco de dados ou sistema de armazenamento para análise.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="section">
+            <div class="container mt-5">
+                <h3>Sobre mim:</h3>
+            </div>
+            <div class="container mt-5">
+                <div class="row ">
+                    <p class="terminal">
+                        <span id="text"></span><span class="cursor-terminal"></span>
+
+                        <script>
+                            const text =
+                                "Sou apenas um rapaz latino americano aventurado no mercado Tech, embora o começo deste resumo seja descontraído, demonstro competências neste site. Sou formado em Análise e Desenvolvimento de Sistemas pela Universidade Estácio, estou atualmente realizando uma Especialização em Análise de Dados e Business Intelligence na Universidade Católica de Brasília. Tenho mais de 3 anos de experiência na área de Tecnologia, onde atuei como Suporte Técnico, adquirindo habilidades valiosas em resolução de problemas, persuasão e ótima comunicação. Atuei nos últimos meses na área de Dados e então, redirecionei meu foco visando crescimento na área, passei a me envolver, em processos de ETL, análise exploratória de dados e criação de Dashboards. Utilizo ferramentas como Excel, Power BI e T-SQL no SQL Server para extrair insights significativos e impulsionar a tomada de decisões informadas. Por isso, decidi iniciar a minha especialização visando ampliar meu conhecimento e obter o certificado na área. Estou determinado a solidificar minha jornada como Analista de Dados, aplicando meu conhecimento técnico e minha paixão pela Análise de Dados para impulsionar o sucesso dos negócios.";
+                            let index = 0;
+
+                            function type() {
+                                if (index < text.length) {
+                                    document.getElementById("text").textContent += text.charAt(index);
+                                    index++;
+                                    setTimeout(type, 100); // Ajuste o intervalo para controlar a velocidade
+                                }
+                            }
+
+                            window.onload = function () {
+                                type(); // Iniciar a digitação automática quando a página carregar
+                            };
+                        </script>
+                    </p>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="empresas-container" id="experiencia" style="background-color: #FF7A57;">
             <div class="experiencia-topicos">
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
-                            <iframe title="ProjetoCurso" width="600" height="400"
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="ProjetoCurso"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiYjFlMGUxYmUtODQ1ZS00MzkxLTk2NTAtYmM1MTZhMThiNjYzIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                             </abbr>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Vendas de Eletrônicos</h3>
+                        <h5 class="curso-tipo">Dashboard | Vendas de Eletrônicos</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query e tooltips.
                             A intenção do projeto é acompanhar cada detalhe da venda de Produtos Eletrônicos.
@@ -166,13 +214,13 @@
 
                 <div class="empresa">
                     <div class="card-imagem slider">
-                        <div class="slider  iframe-container">
-                            <iframe title="locacao-veiculos" width="600" height="400"
+                        <div class="iframe-container">
+                            <iframe title="locacao-veiculos"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiMjkwOWQwZTYtZDYyMi00Zjg0LWIwZjUtNzYyNGNkNjkyMzFhIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                         <div class="card-info">
-                            <h3>Dashboard - Vendas de Veículos</h3>
+                            <h5 class="curso-tipo">Dashboard | Vendas de Veículos</h5>
                             <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                                 DAX, power query.
                                 A intenção do projeto é acompanhar cada detalhe da locadora de veículos.
@@ -187,20 +235,63 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
-                            <iframe title="dashboard-universidade" width="600" height="400"
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="analise-vendas" width="600" height="373.5"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiM2Y5MzkyMzYtZTk2OS00MjRlLTlmY2QtNDk5ZjUyODFlZGEwIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+                                frameborder="0" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h5 class="curso-tipo">Dashboard | Análise de Vendas</h5>
+                        <p class="empresa-descricao">Dashboard desenvolvido no Power BI para acompanhamento de vendas,
+                            com uso de filtros, funções DAX e Figma para monstagem do layout.
+                        </p>
+                        <ul class="empresa-habilidades">
+                            <li>EXCEL</li>
+                            <li>POWER BI</li>
+                            <li>FIGMA</li>
+                            <li>DAX</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="empresa">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="pesquisa-satisfação-colaboradores" width="600" height="373.5"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiYzYyZDZhOTEtNDI1NC00NjI4LTk1ODgtMjc2MjIxMTQwZDc3IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+                                frameborder="0" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h5 class="curso-tipo">Dashboard | Satisfação Colaboradores</h5>
+                        <p class="empresa-descricao">Dashboard desenvolvido no Power BI para acompanhamento de vendas,
+                            com uso de filtros, funções DAX e Figma para monstagem do layout.
+                        </p>
+                        <ul class="empresa-habilidades">
+                            <li>EXCEL</li>
+                            <li>POWER BI</li>
+                            <li>FIGMA</li>
+                            <li>DAX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="empresa">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="dashboard-universidade"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiZTY1NGYwNGEtOTNmOS00MWExLWFiZmYtNzJiNjViNDlhOTEwIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Universidade</h3>
+                        <h5 class="curso-tipo">Dashboard | Universidade</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query.
-                            A intenção do projeto é os alunos matriculados por campus, por sexo e o percentual de
-                            pessoas que buscaram ou não seus diplomas (dado este que reflete diretamente na
-                            inadimplência). Mostrando também a inadimplência num contexto geral.
+                            A intenção do projeto é ter métricas que análise alunos matriculados por campus, sexo e o
+                            percentual de pessoas que buscaram ou não seus diplomas, dado que pode refletir na
+                            inadimplência.
                         </p>
                         <ul class="empresa-habilidades">
                             <li>EXCEL</li>
@@ -211,15 +302,15 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
-                            <iframe title="acompanhamento_RH" width="600" height="400"
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="acompanhamento_RH"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiODI4YzcwM2EtNTk5ZC00NGE2LThjNzEtNmRhYzJiMzc0NTQ4IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Acompanhamento RH</h3>
+                        <h5 class="curso-tipo">Dashboard | Acompanhamento RH</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query.
                         </p>
@@ -232,15 +323,15 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
-                            <iframe title="dashboard_campeonato_brasileiro" width="600" height="400"
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="dashboard_campeonato_brasileiro"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiNWY3NTE4ZWQtODVmMy00NWQzLWFkN2YtNTY3ZWE2YWJhODFmIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Brasileirão de 2021</h3>
+                        <h5 class="curso-tipo">Dashboard | Brasileirão de 2021</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query.
                         </p>
@@ -248,21 +339,21 @@
                             <li>EXCEL</li>
                             <li>POWER BI</li>
                             <li>DAX</li>
-                            <li>Linguagem M</li>
+                            <li>M</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
-                            <iframe title="dashboard_vendas" width="600" height="400"
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="dashboard_vendas"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiNDNkYTUwYmMtY2U4Ny00YTdkLThmZGQtOGI1Y2VlOTBlNWI5IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Vendas de Veículos</h3>
+                        <h5 class="curso-tipo">Dashboard | Vendas de Veículos</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query.
                         </p>
@@ -275,15 +366,15 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <iframe title="dashboard_financeiro" width="600" height="373.5"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiNzAwZTZhMzEtZjBhNy00ZmQ0LTlmNjgtNjFjOTRmYTgwZWMzIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Financeiro</h3>
+                        <h5 class="curso-tipo">Dashboard | Financeiro</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros e funções.
                         </p>
                         <ul class="empresa-habilidades">
@@ -294,15 +385,15 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <iframe title="dashboard_producao" width="600" height="373.5"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiYmJjN2JkMzUtYTAxNS00NDNiLWI5MzMtMTIxMzY1MGRiZTRkIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Produção</h3>
+                        <h5 class="curso-tipo">Dashboard | Produção</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros e funções
                             DAX.
                         </p>
@@ -315,15 +406,15 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <iframe title="dashboard_rh_hashtag" width="600" height="373.5"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiMWVkODg1YTMtMzZmMC00NDlhLTk2YzUtYTA5NjgxZTdiMzNmIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Recursos Humanos</h3>
+                        <h5 class="curso-tipo">Dashboard | Recursos Humanos</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros, funções DAX
                             e tooltip.
                         </p>
@@ -336,15 +427,15 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <iframe title="logistica_faturamento" width="600" height="373.5"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiMTE4NGZhNGEtYjA3ZS00ZTBiLTg2NzQtZWI2MWI3NDk4ZTdkIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Faturamento & Logística</h3>
+                        <h5 class="curso-tipo">Dashboard | Faturamento & Logística</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros, funções
                             DAX.
                         </p>
@@ -357,15 +448,15 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <iframe title="base_axon" width="600" height="373.5"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiMWZkN2UxYzEtZmU4ZS00ODk1LTgxZmEtYWI5ZjVhNDk1OTk3IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Faturamento & Logística | Axon Health Care</h3>
+                        <h5 class="curso-tipo">Dashboard | Faturamento Axon Health Care</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido no Power BI para o processo seletivo da
                             empresa de produtos hospitalares Axon Health Care, com uso de filtros, funções DAX e Figma
                             para monstagem do layout.
@@ -380,15 +471,15 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <iframe title="Uniao Brasil - Cúpula" width="600" height="373.5"
                                 src="https://app.powerbi.com/view?r=eyJrIjoiNTNkODZjMDgtMjkwOC00YjgyLThmMGEtY2ZkN2YyNWEyMTBhIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Filiados União Brasil</h3>
+                        <h5 class="curso-tipo">Dashboard | Filiados União Brasil</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido no Power BI para acompanhamento de filiações
                             do Partido União Brasil, com uso de filtros, funções DAX e Figma para monstagem do layout.
                         </p>
@@ -402,16 +493,18 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
-                            <iframe title="analise-vendas" width="600" height="373.5"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiM2Y5MzkyMzYtZTk2OS00MjRlLTlmY2QtNDk5ZjUyODFlZGEwIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="imersao-aula2-logistica-transportes" width="600" height="373.5"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiYmNmYmFkZDEtMjhhZC00NzhkLWEwNDgtZTJjNzZlOWQ4NDM5IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Análise de Vendas</h3>
-                        <p class="empresa-descricao">Dashboard desenvolvido no Power BI para acompanhamento de vendas, com uso de filtros, funções DAX e Figma para monstagem do layout.
+                        <h5 class="curso-tipo">Dashboard | Logística e Transporte</h5>
+                        <p class="empresa-descricao">Dashboard desenvolvido no Power BI para acompanhamento de viagens,
+                            atraso ou entregas no prazo, viagens por tipo de veículo, entre outras coisas. Com uso de
+                            filtros, funções DAX e Figma para monstagem do layout.
                         </p>
                         <ul class="empresa-habilidades">
                             <li>EXCEL</li>
@@ -423,14 +516,19 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
-                            <iframe title="pesquisa-satisfação-colaboradores" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYzYyZDZhOTEtNDI1NC00NjI4LTk1ODgtMjc2MjIxMTQwZDc3IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="imersao-aula3-sazonalidade-receita&volume-frutas"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiMjQ3NGIxYmQtYmI3OC00ZGQyLTkwYTEtNjg2OGJhMGNiOGJkIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+                                frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Análise de Satisfação dos Colaboradores</h3>
-                        <p class="empresa-descricao">Dashboard desenvolvido no Power BI para acompanhamento de vendas, com uso de filtros, funções DAX e Figma para monstagem do layout.
+                        <h5 class="curso-tipo">Dashboard | Receita e Sazonalidade</h5>
+                        <p class="empresa-descricao">Dashboard desenvolvido no Power BI para acompanhamento da venda de
+                            frutas por ano, receita por fazenda, por qual meio de transporte é entregue, países que mais
+                            consomem, entre outras coisas. Com uso de filtros, funções DAX e Figma para monstagem do
+                            layout.
                         </p>
                         <ul class="empresa-habilidades">
                             <li>EXCEL</li>
@@ -441,21 +539,38 @@
                     </div>
                 </div>
 
-                <!--<div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
-                            <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
-                                <img src="assets/img/img-dashboards/dash-pandas-python.png"
-                                    alt="aba de locação de veículos" height="335">
-                                <img src="assets/img/img-dashboards/dash-pandas-python-vendasporcidade.png"
-                                    alt="aba de visualização de clientes de veículos" height="335">
-                            </abbr>
+                <div class="empresa">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <iframe title="imersao-aula1-fluxo-caixa"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiNjA2NDhlYTUtNTg1My00NTc4LWI0MmYtMGY2MjUzZjM5YmQ3IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+                                frameborder="0" allowFullScreen="true"></iframe>
                         </div>
-                        <button class="prev" onclick="prevSlide()">&#10094;</button>
-                        <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Vendas de Gás</h3>
+                        <h5 class="curso-tipo">Dashboard | Fluxo de Caixa</h5>
+                        <p class="empresa-descricao">Dashboard desenvolvido no Power BI para acompanhamento de despesas
+                            por setor, movimentações por período de receitas ou despesas, despesas e suas origens, entre
+                            outras coisas. Com uso de filtros, funções DAX e Figma para monstagem do layout.
+                        </p>
+                        <ul class="empresa-habilidades">
+                            <li>EXCEL</li>
+                            <li>POWER BI</li>
+                            <li>FIGMA</li>
+                            <li>DAX</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="empresa">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <img src="assets/img/img-sites/Pandas_logo.svg.png" alt="imagem pandas">
+                            </abbr>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h5 class="curso-tipo">Dashboard | Vendas de Gás</h5>
                         <p class="empresa-descricao">Dashboard desenvolvido em Python com as bibliotecas: Pandas e
                             Matplotlib, utilizando funções, métodos para a exploração dos dados trazidos.
                         </p>
@@ -466,8 +581,30 @@
                             <li>Matplotlib</li>
                         </ul>
                     </div>
-                </div>-->
+                </div>
+
+                <div class="empresa">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
+                            <img src="assets/img/img-sites/relacionamento-table.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h5 class="curso-tipo">SQL | Querys e Projetos</h5>
+                        <p class="empresa-descricao">Link que direciona para o GitHub, onde estão localizados alguns
+                            projetos em SQL e consultas em diversas bases de dados. Uso para ETL, analisando dados e
+                            gerando relatórios.
+                        </p>
+                        <ul class="empresa-habilidades">
+                            <li>EXCEL</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
+
+
         </section>
 
         <section id="animacao">
@@ -534,7 +671,7 @@
                                 <span class="curso-instituicao">Udemy</span>
                                 <li>Desenvolvimento Web Completo <span>114 horas</span></li>
                                 <span class="curso-instituicao">Hashtag Treinamentos</span>
-                                <li>Intensivo Power BI<span> 08 horas</span></li>
+                                <li>Power BI<span>em andamento</span></li>
                                 <span class="curso-instituicao">Udemy</span>
                                 <li>SQL Server & Power BI<span> 36 horas</span></li>
                                 <span class="curso-instituicao">Coursera</span>
@@ -572,7 +709,7 @@
             <div class="container text-center">
                 <div class="contact text-left">
                     <div class="form">
-                        <h6 class="section-title mb-3">Insira seu contato</h6>
+                        <h6 class="section-title mb-3" style="color: #FFF;">Insira seu contato</h6>
                         <form action="https://formspree.io/f/xvoewdod" method="POST">
                             <div class="form-group">
                                 <input type="email" class="form-control" id="exampleInputEmail1"
@@ -589,7 +726,7 @@
                         <div class="item">
                             <i class="ti-mobile"></i>
                             <div>
-                                <h5>WhatsApp</h5>
+                                <h5 class="curso-tipo">WhatsApp</h5>
                                 <a href="https://api.whatsapp.com/send?phone=5561985612400"
                                     class="social-item">Contato</a>
                             </div>
@@ -597,7 +734,7 @@
                         <div class="item">
                             <i class="ti-email"></i>
                             <div class="mb-0">
-                                <h5>E-mail</h5>
+                                <h5 class="curso-tipo">E-mail</h5>
                                 <p>fellipe.scontato@gmail.com</p>
                             </div>
                         </div>
@@ -631,6 +768,10 @@
         <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
         <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
         <script src="assets/js/steller.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+        <script src="assets/js/slider-js.js"></script>
 
 </body>
 

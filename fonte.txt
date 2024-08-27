@@ -129,8 +129,8 @@
             <div class="experiencia-topicos">
                 <!-- XP1 -->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dash-vendas-eletronicos/analise-vendas-capa.png">
                                 <img src="assets/img/img-dashboards/dash-vendas-eletronicos/dash-vendas-eletronicos.png">
@@ -144,7 +144,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Vendas de Eletrônicos</h3>
+                        <h5 class="curso-tipo">Dashboard | Vendas de Eletrônicos</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query e tooltips.
                             A intenção do projeto é acompanhar cada detalhe da locadora de veículos.
@@ -159,8 +159,8 @@
 
                 <!-- XP2-->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/aba-locacao-veiculos.png"
                                     alt="aba de locação de veículos">
@@ -172,7 +172,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Vendas de Veículos</h3>
+                        <h5 class="curso-tipo">Dashboard | Vendas de Veículos</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query.
                             A intenção do projeto é acompanhar cada detalhe da locadora de veículos.
@@ -186,8 +186,8 @@
                 </div>
 
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dash-universidade/dash-universidade-capa.png"
                                     alt="capa do dashboard">
@@ -207,7 +207,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Universidade</h3>
+                        <h5 class="curso-tipo">Dashboard | Universidade</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query.
                             A intenção do projeto é os alunos matriculados por campus, por sexo e o percentual de
@@ -224,8 +224,8 @@
 
                 <!-- XP3 -->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-acompanhamento-rh.png"
                                     alt="Dashboard de Gestão de Pessoas">
@@ -235,7 +235,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Acompanhamento RH</h3>
+                        <h5 class="curso-tipo">Dashboard | Acompanhamento RH</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query.
                         </p>
@@ -249,8 +249,8 @@
 
                 <!-- XP4 -->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dash-brasileirão.jpeg"
                                     alt="Dashboard do campeonato brasileiro de 2021">
@@ -260,7 +260,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Brasileirão de 2021</h3>
+                        <h5 class="curso-tipo">Dashboard | Brasileirão de 2021</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query.
                         </p>
@@ -268,15 +268,15 @@
                             <li>EXCEL</li>
                             <li>POWER BI</li>
                             <li>DAX</li>
-                            <li>Linguagem M</li>
+                            <li>M</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- XP5 -->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-vendas-capa.png"
                                     alt="aba de locação de veículos">
@@ -288,7 +288,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Vendas de Veículos</h3>
+                        <h5 class="curso-tipo">Dashboard | Vendas de Veículos</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de medidas, funções
                             DAX, power query.
                         </p>
@@ -302,8 +302,8 @@
 
                 <!-- XP4 -->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-financeiro-hs.png"
                                     alt="vendas por região">
@@ -313,7 +313,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Vendas</h3>
+                        <h5 class="curso-tipo">Dashboard | Vendas</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros e funções.
                         </p>
                         <ul class="empresa-habilidades">
@@ -327,8 +327,8 @@
 
                 <!-- XP5 -->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-vendas-hs.png" alt="vendas por região">
                             </abbr>
@@ -337,7 +337,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Vendas</h3>
+                        <h5 class="curso-tipo">Dashboard | Vendas</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros e funções.
                         </p>
                         <ul class="empresa-habilidades">
@@ -350,8 +350,8 @@
 
                 <!-- XP5 -->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-producao-hs.png" alt="vendas por região">
                             </abbr>
@@ -360,7 +360,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Produção</h3>
+                        <h5 class="curso-tipo">Dashboard | Produção</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros e funções
                             DAX.
                         </p>
@@ -374,8 +374,8 @@
 
                 <!-- XP6 -->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dashboard-rh-hs.jpeg" alt="vendas por região">
                                 <img src="assets/img/img-dashboards/dashboard-rh-tooltip-hs.jpeg" height="335"
@@ -386,7 +386,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Recursos Humano</h3>
+                        <h5 class="curso-tipo">Dashboard | Recursos Humano</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros, funções DAX
                             e tooltip.
                         </p>
@@ -400,8 +400,8 @@
 
                 <!-- XP8 -->
                 <div class="empresa">
-                    <div class="card-imagem slider  iframe-container">
-                        <div class="slider  iframe-container">
+                    <div class="card-imagem">
+                        <div class="iframe-container">
                             <abbr title="caso queira ter acesso aos dashboards, por gentileza me enviar um e-mail">
                                 <img src="assets/img/img-dashboards/dash-pandas-python.png"
                                     alt="aba de locação de veículos" height="335">
@@ -413,7 +413,7 @@
                         <button class="next" onclick="nextSlide()">&#10095;</button>
                     </div>
                     <div class="card-info">
-                        <h3>Dashboard - Vendas de Gás</h3>
+                        <h5 class="curso-tipo">Dashboard | Vendas de Gás</h3>
                         <p class="empresa-descricao">Dashboard desenvolvido em Python com as bibliotecas: Pandas e
                             Matplotlib, utilizando funções, métodos para a exploração dos dados trazidos.
                         </p>
@@ -548,7 +548,7 @@
                         <div class="item">
                             <i class="ti-mobile"></i>
                             <div>
-                                <h5>WhatsApp</h5>
+                                <h5 class="curso-tipo">WhatsApp</h5>
                                 <a href="https://api.whatsapp.com/send?phone=5561985612400"
                                     class="social-item">Contato</a>
                             </div>
@@ -556,7 +556,7 @@
                         <div class="item">
                             <i class="ti-email"></i>
                             <div class="mb-0">
-                                <h5>E-mail</h5>
+                                <h5 class="curso-tipo">E-mail</h5>
                                 <p>fellipe.scontato@gmail.com</p>
                             </div>
                         </div>

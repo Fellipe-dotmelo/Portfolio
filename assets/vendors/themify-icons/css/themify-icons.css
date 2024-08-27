@@ -740,10 +740,10 @@
 .ti-layout-tab-min:before {
 	content: "\e6ee";
 }
-.ti-layout-slider  iframe-container:before {
+.ti-layout-iframe-container:before {
 	content: "\e6ef";
 }
-.ti-layout-slider  iframe-container-alt:before {
+.ti-layout-iframe-container-alt:before {
 	content: "\e6f0";
 }
 .ti-layout-sidebar-right:before {

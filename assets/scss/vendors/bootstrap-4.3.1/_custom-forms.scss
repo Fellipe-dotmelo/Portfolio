@@ -375,7 +375,7 @@
 
     // Pseudo-elements must be split across multiple rulesets to have an effect.
     // No box-shadow() mixin for focus accessibility.
-    &::-webkit-slider  iframe-container-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
+    &::-webkit-iframe-container-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
     &::-moz-range-thumb     { box-shadow: $custom-range-thumb-focus-box-shadow; }
     &::-ms-thumb            { box-shadow: $custom-range-thumb-focus-box-shadow; }
   }
@@ -384,7 +384,7 @@
     border: 0;
   }
 
-  &::-webkit-slider  iframe-container-thumb {
+  &::-webkit-iframe-container-thumb {
     width: $custom-range-thumb-width;
     height: $custom-range-thumb-height;
     margin-top: ($custom-range-track-height - $custom-range-thumb-height) / 2; // Webkit specific
@@ -400,7 +400,7 @@
     }
   }
 
-  &::-webkit-slider  iframe-container-runnable-track {
+  &::-webkit-iframe-container-runnable-track {
     width: $custom-range-track-width;
     height: $custom-range-track-height;
     color: transparent; // Why?
@@ -478,11 +478,11 @@
   }
 
   &:disabled {
-    &::-webkit-slider  iframe-container-thumb {
+    &::-webkit-iframe-container-thumb {
       background-color: $custom-range-thumb-disabled-bg;
     }
 
-    &::-webkit-slider  iframe-container-runnable-track {
+    &::-webkit-iframe-container-runnable-track {
       cursor: default;
     }
 
