@@ -751,6 +751,20 @@
                             <script>
                                 document.write(new Date().getFullYear())
                             </script> &copy; </p>
+                            <div id="cookie-banner" style="position: fixed; bottom: 0; background: #333; color: #fff; padding: 10px; width: 100%; display: none;">
+                                <p>Este site usa cookies para melhorar a experiência. <a href="/privacy-policy">Saiba mais</a>. <button id="accept-cookies">Aceitar</button></p>
+                              </div>
+                              
+                              <script>
+                                document.getElementById('accept-cookies').addEventListener('click', function() {
+                                  document.getElementById('cookie-banner').style.display = 'none';
+                                  document.cookie = "cookieConsent=true; SameSite=Lax";
+                                });
+                              
+                                if (document.cookie.indexOf('cookieConsent=true') === -1) {
+                                  document.getElementById('cookie-banner').style.display = 'block';
+                                }
+                              </script>
                     </div>
                 </div>
             </footer>
