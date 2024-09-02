@@ -1759,12 +1759,12 @@ pre code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 16px;
   /* Espaço entre os itens */
 }
 
 .skill-box {
-  flex: 1 1 calc(20% - 20px);
+  flex: 1 1 calc(27% - 27px);
   /* Cada item ocupa 20% da linha menos o espaço entre eles */
   background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e);
   opacity: 0.95;
@@ -1772,7 +1772,7 @@ pre code {
   color: #ffffff;
   /* Cor do texto em branco */
   text-align: center;
-  padding: 17px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1800,7 +1800,7 @@ pre code {
 /* Apenas em telas maiores (largura maior que 992px) */
 @media (min-width: 992px) {
   .skill-box {
-    min-height: 350px;
+    min-height: 235px;
     /* Define uma altura mínima consistente */
   }
 }
@@ -1808,7 +1808,7 @@ pre code {
 /* Responsividade */
 @media (max-width: 1200px) {
   .skill-box {
-    flex: 1 1 calc(33.33% - 20px);
+    flex: 1 1 calc(30% - 20px);
     /* Em telas grandes, 3 itens por linha */
   }
 }
