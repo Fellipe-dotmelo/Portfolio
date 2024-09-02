@@ -582,6 +582,8 @@ pre code {
 #about {
   background-color: var(--dark);
   color: #fff;
+  padding: 100px 50px;
+
 }
 
 .container {
@@ -604,22 +606,22 @@ pre code {
 
 .terminal {
   font-size: 24px;
-  padding: 0 15px;
-  font-size: 1.30rem;
-  line-height: 1.25;
+  padding: 0 0px;
+  font-size: 1.10rem;
+  line-height: 1.10;
   max-width: 100ch;
   font-family: 'Fira Code', monospace;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #00ff00;
+  color: var(--primary);
 }
 
 /* Estilo da barrinha piscante */
 .cursor-terminal {
   display: inline-block;
   width: 10px;
-  background-color: #00ff00;
+  background-color: var(--primary);
   animation: blink 1s step-start infinite;
 }
 
@@ -651,9 +653,10 @@ pre code {
 
 .card-imagem {
   position: relative;
+  background-color: white;
 
-  border-radius: 5px 5px 0 0;
-  
+  border-radius: 13px 13px 0 0;
+
   border-top: solid 1.5px var(--dark);
   border-left: solid 1.5px var(--dark);
   border-right: solid 1.5px var(--dark);
@@ -727,7 +730,8 @@ pre code {
   display: inline-block;
   font-size: .875rem;
   text-transform: uppercase;
-  color: var(--primary);
+  color: #2e2e2e;
+  font-weight: 638;
   margin-bottom: 10px;
   background-color: var(--light);
   padding: 5px 10px;
@@ -737,10 +741,6 @@ pre code {
 
 
 .empresa-titulo {
-  margin-bottom: 10px;
-}
-
-.empresa-descricao {
   margin-bottom: 10px;
 }
 
@@ -852,20 +852,6 @@ pre code {
   opacity: 0.95;
 }
 
-/* Estilo para exibir o grafico-container quando o item de curso está em foco */
-.curso:hover .grafico-container {
-  display: block;
-  /* Exibe o grafico-container quando o item está em foco */
-}
-
-/* Estilo para o grafico-container quando o item de curso está em foco */
-.curso:hover .grafico-container .meuGrafico {
-  opacity: 1;
-  /* Opacidade total para o gráfico quando o item está em foco */
-}
-
-
-/* Estilo padrão para o texto de informação */
 .info {
   position: absolute;
   top: 50%;
@@ -889,6 +875,7 @@ pre code {
   font-size: 6.5rem;
   word-break: break-all;
   line-height: 1.13;
+  margin: 0 auto;
 }
 
 .formacao-texto {
@@ -902,24 +889,6 @@ pre code {
 
 .formacao-texto strong {
   color: #000;
-}
-
-.meuGrafico::before {
-  content: attr(data-porcentagem-concluido) '%';
-  position: absolute;
-  /* Posicionamento absoluto */
-  top: 55%;
-  /* Alinhamento vertical no meio */
-  left: 50%;
-  /* Alinhamento horizontal no meio */
-  transform: translate(-50%, -50%);
-  /* Centralizar */
-  font-size: 18px;
-  /* Tamanho da fonte */
-  font-weight: bold;
-  /* Peso da fonte */
-  color: var(--light);
-  /* Cor do texto */
 }
 
 .info {
@@ -1036,8 +1005,8 @@ pre code {
 @media (max-width: 800px) {
   .formacao-container {
     grid-template-columns: 1fr;
-    padding: 60px 20px;
-    gap: 40px;
+    padding: 20px 20px;
+    gap: 30px;
   }
 
   .card-imagem .iframe-container img {
@@ -1051,15 +1020,11 @@ pre code {
     display: grid;
     grid-template-columns: 1fr;
     /* Cada par de itens ocupa duas colunas */
-    gap: 25px;
+    gap: 10px;
     /* Espaçamento entre os pares de itens */
     max-width: 1300px;
-    padding: 100px 50px;
+    padding: 100px 16px;
     margin: 0 auto;
-  }
-
-  .subtitulo-formacao {
-    color: #fff;
   }
 
   .formacao-texto {
@@ -1080,6 +1045,16 @@ pre code {
     position: relative;
     top: 75px;
     left: 0;
+  }
+
+  .subtitulo-formacao {
+    color: #2e2e2e;
+    text-align: center;
+    margin: auto
+  }
+
+  .terminal{
+    font-size: 1.115rem;
   }
 }
 
@@ -2961,6 +2936,13 @@ pre code {
 
   .card-info {
     padding: 10px;
+  }
+
+  .card-info .link-dashboard{
+    font-size: .875rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 10px;
   }
 
   .empresa-habilidades li {
@@ -12737,6 +12719,7 @@ h6 {
 
 .title {
   font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1200 - 320)));
+  margin-left: -14px;
 }
 
 @media (min-width: 992px) {
@@ -13212,7 +13195,7 @@ i {
 .header {
   height: 79vh;
   min-height: 650px;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 2.15px solid #dee2e6;
 }
 
 .header .container {
@@ -13229,6 +13212,11 @@ i {
 
 .header .container .infos {
   margin-top: 120px;
+}
+
+.infos .subt{
+  text-align: center;
+
 }
 
 .header .container .infos .subtitle {
