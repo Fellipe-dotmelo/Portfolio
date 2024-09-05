@@ -654,6 +654,8 @@ pre code {
 }
 
 .card-imagem {
+  width: 100%;
+  min-height: 213px;
   position: relative;
   background-color: white;
   border-radius: 13px 13px 0 0;
@@ -691,6 +693,13 @@ pre code {
   text-align: justify;
 }
 
+.card-info a:hover,
+.card-info i:hover{
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+
 .empresa-habilidades {
   list-style: none;
   padding: 0;
@@ -716,13 +725,13 @@ pre code {
 
 .card-info a {
   text-decoration: none;
-  color: #ffffff;
+  color: #2e2e2e;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 200px;
   height: 50px;
-  background-color: #28a745;
+  background-color: var(--light);
   padding: 8px;
   border-radius: 5px;
   font-size: 16px;
@@ -2946,15 +2955,12 @@ pre code {
     border: 0;
   }
 
-  .card-info {
-    padding: 10px;
-  }
-
-  .card-info .link-dashboard{
+  .card-info{
     font-size: .875rem;
     text-transform: uppercase;
     color: var(--primary);
     margin-bottom: 10px;
+    padding: 7px;
   }
 
   .empresa-habilidades li {
@@ -6102,6 +6108,10 @@ input[type="button"].btn-block {
 
 .card-link+.card-link {
   margin-left: 1.25rem;
+}
+
+.header-img{
+  max-width: 18%;
 }
 
 .card-header {
@@ -13233,15 +13243,10 @@ i {
   margin-top: 120px;
 }
 
-.infos .subt{
-  text-align: center;
-
-}
-
 .header .container .infos .subtitle {
   margin-bottom: 0;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 1.335rem;
+  font-weight: 550;
 }
 
 .header .container .infos .title {
