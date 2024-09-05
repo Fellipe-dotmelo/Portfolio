@@ -6111,7 +6111,8 @@ input[type="button"].btn-block {
 }
 
 .header-img{
-  max-width: 18%;
+  max-width: 215px;
+  max-height: 55px
 }
 
 .card-header {
