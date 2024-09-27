@@ -3,33 +3,42 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="assets/img/img-favicon/favicon.svg" type="image/svg+xml">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap JS, jQuery e Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/24defec40b.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap + Steller main styles -->
-    <link rel="stylesheet" href="assets/css/steller.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/24defec40b.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap + Steller main styles -->
+  <link rel="stylesheet" href="assets/css/steller.css">
   <title>Dashboards</title>
 </head>
 
-<nav class="navbar navbar-expand-lg fixed-top logo" data-spy="affix" data-offset-top="0" style="background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e);
-  opacity: 0.95;">
+<nav class="navbar navbar-expand-lg fixed-top logo" data-spy="affix" data-offset-top="0"
+  style="background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e); opacity: 0.95;">
   <div class="container">
-    <img class="header-img" src="assets/img/img-icons/logo.png" alt="">
+    <img class="header-img" src="assets/img/img-icons/logo.png" alt="Logo">
 
+    <!-- Botão de Navegação Mobile -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-      <div class="div-slider"></div>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto align-items-center">
         <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         </li>
         <li class="nav-item">
@@ -43,6 +52,19 @@
   </div>
 </nav>
 
+<script>
+  $(document).ready(function () {
+    // Alternar o menu ao clicar no botão navbar-toggler
+    $('.navbar-toggler').on('click', function () {
+      $('#navbarSupportedContent').collapse('toggle');
+    });
+
+    // Fechar o menu quando clicar em um link do menu
+    $('.navbar-nav>li>a').on('click', function () {
+      $('#navbarSupportedContent').collapse('hide');
+    });
+  });
+</script>
 
 <body>
   <section class="empresas-container" id="experiencia" style="background-color: #FF7A57;">
@@ -50,12 +72,13 @@
       <div class="empresa">
         <div class="card-imagem">
           <div class="iframe-container">
-            <img title="Produção" src="assets/img/img-dashboards/001-dashboard-producao/producao-ds.png"></img>
+            <img src="assets/img/img-dashboards/001-dashboard-producao/producao-ds.png" frameborder="0"
+              allowFullScreen="true"></img>
           </div>
         </div>
         <div class="card-info">
-          <h5 class="curso-tipo">Dashboard | Produção</h5>
-          <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros e funções
+          <h5 class="curso-tipo">Dashboard | Faturamento & Logística</h5>
+          <p class="empresa-descricao">Dashboard desenvolvido em Power BI, com uso de filtros, funções
             DAX.
           </p>
           <ul class="empresa-habilidades">
@@ -73,8 +96,8 @@
       <div class="empresa">
         <div class="card-imagem">
           <div class="iframe-container">
-            <img src="assets/img/img-dashboards/002-dashboard-gestao-fat/faturamento-ds.png"
-              frameborder="0" allowFullScreen="true"></img>
+            <img src="assets/img/img-dashboards/002-dashboard-gestao-fat/faturamento-ds.png" frameborder="0"
+              allowFullScreen="true"></img>
           </div>
         </div>
         <div class="card-info">
@@ -87,7 +110,8 @@
             <li>POWER BI</li>
             <li>DAX</li>
           </ul>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiMTE4NGZhNGEtYjA3ZS00ZTBiLTg2NzQtZWI2MWI3NDk4ZTdkIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" target="_blank" class="">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiMTE4NGZhNGEtYjA3ZS00ZTBiLTg2NzQtZWI2MWI3NDk4ZTdkIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+            target="_blank" class="">
             <i class="fa-solid fa-eye"></i>Visualizar
           </a>
         </div>
@@ -112,7 +136,8 @@
             <li>FIGMA</li>
             <li>DAX</li>
           </ul>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiMWZkN2UxYzEtZmU4ZS00ODk1LTgxZmEtYWI5ZjVhNDk1OTk3IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" target="_blank" class="">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiMWZkN2UxYzEtZmU4ZS00ODk1LTgxZmEtYWI5ZjVhNDk1OTk3IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+            target="_blank" class="">
             <i class="fa-solid fa-eye"></i>Visualizar
           </a>
         </div>
@@ -121,7 +146,8 @@
       <div class="empresa">
         <div class="card-imagem">
           <div class="iframe-container">
-            <img src="assets/img/img-dashboards/004-dashboard-logistica/logistica-ds.png" frameborder="0" allowFullScreen="true"></img>
+            <img src="assets/img/img-dashboards/004-dashboard-logistica/logistica-ds.png" frameborder="0"
+              allowFullScreen="true"></img>
           </div>
         </div>
         <div class="card-info">
@@ -136,7 +162,8 @@
             <li>FIGMA</li>
             <li>DAX</li>
           </ul>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiYmNmYmFkZDEtMjhhZC00NzhkLWEwNDgtZTJjNzZlOWQ4NDM5IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" target="_blank" class="">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiYmNmYmFkZDEtMjhhZC00NzhkLWEwNDgtZTJjNzZlOWQ4NDM5IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+            target="_blank" class="">
             <i class="fa-solid fa-eye"></i>Visualizar
           </a>
         </div>
@@ -145,8 +172,8 @@
       <div class="empresa">
         <div class="card-imagem">
           <div class="iframe-container">
-            <img src="assets/img/img-dashboards/005-dashboard-fluxo/fluxo-caixa-ds.png"
-              frameborder="0" allowFullScreen="true"></img>
+            <img src="assets/img/img-dashboards/005-dashboard-fluxo/fluxo-caixa-ds.png" frameborder="0"
+              allowFullScreen="true"></img>
           </div>
         </div>
         <div class="card-info">
@@ -161,7 +188,8 @@
             <li>FIGMA</li>
             <li>DAX</li>
           </ul>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiNjA2NDhlYTUtNTg1My00NTc4LWI0MmYtMGY2MjUzZjM5YmQ3IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" target="_blank" class="">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiNjA2NDhlYTUtNTg1My00NTc4LWI0MmYtMGY2MjUzZjM5YmQ3IiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+            target="_blank" class="">
             <i class="fa-solid fa-eye"></i>Visualizar
           </a>
         </div>
@@ -172,8 +200,8 @@
       <div class="empresa">
         <div class="card-imagem">
           <div class="iframe-container">
-            <img src="assets/img/img-dashboards/006-acompanhando-vendas/vendas-acompanhando-ds.png"
-              frameborder="0" allowFullScreen="true"></img>
+            <img src="assets/img/img-dashboards/006-acompanhando-vendas/vendas-acompanhando-ds.png" frameborder="0"
+              allowFullScreen="true"></img>
           </div>
         </div>
         <div class="card-info">
@@ -187,7 +215,8 @@
             <li>FIGMA</li>
             <li>DAX</li>
           </ul>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiM2Y5MzkyMzYtZTk2OS00MjRlLTlmY2QtNDk5ZjUyODFlZGEwIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" target="_blank" class="">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiM2Y5MzkyMzYtZTk2OS00MjRlLTlmY2QtNDk5ZjUyODFlZGEwIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+            target="_blank" class="">
             <i class="fa-solid fa-eye"></i>Visualizar
           </a>
         </div>
@@ -196,8 +225,8 @@
       <div class="empresa">
         <div class="card-imagem">
           <div class="iframe-container">
-            <img src="assets/img/img-dashboards/007-dashboard-ub/ub-ds.png"
-              frameborder="0" allowFullScreen="true"></img>
+            <img src="assets/img/img-dashboards/007-dashboard-ub/ub-ds.png" frameborder="0"
+              allowFullScreen="true"></img>
           </div>
         </div>
         <div class="card-info">
@@ -211,7 +240,8 @@
             <li>FIGMA</li>
             <li>DAX</li>
           </ul>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiNTNkODZjMDgtMjkwOC00YjgyLThmMGEtY2ZkN2YyNWEyMTBhIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" target="_blank" class="">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiNTNkODZjMDgtMjkwOC00YjgyLThmMGEtY2ZkN2YyNWEyMTBhIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+            target="_blank" class="">
             <i class="fa-solid fa-eye"></i>Visualizar
           </a>
         </div>
@@ -220,7 +250,8 @@
       <div class="empresa">
         <div class="card-imagem">
           <div class="iframe-container">
-            <img src="assets/img/img-dashboards/008-dashboard-vendas-eletronicos/dash-vendas-eletronicos.png" frameborder="0" allowFullScreen="true"></img>
+            <img src="assets/img/img-dashboards/008-dashboard-vendas-eletronicos/dash-vendas-eletronicos.png"
+              frameborder="0" allowFullScreen="true"></img>
             </abbr>
           </div>
         </div>
@@ -235,7 +266,8 @@
             <li>POWER BI</li>
             <li>FIGMA</li>
           </ul>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiYjFlMGUxYmUtODQ1ZS00MzkxLTk2NTAtYmM1MTZhMThiNjYzIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" target="_blank" class="">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiYjFlMGUxYmUtODQ1ZS00MzkxLTk2NTAtYmM1MTZhMThiNjYzIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+            target="_blank" class="">
             <i class="fa-solid fa-eye"></i>Visualizar
           </a>
         </div>
@@ -261,7 +293,8 @@
             <li>POWER BI</li>
             <li>SQL SERVER</li>
           </ul>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiZTY1NGYwNGEtOTNmOS00MWExLWFiZmYtNzJiNjViNDlhOTEwIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" target="_blank" class="">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiZTY1NGYwNGEtOTNmOS00MWExLWFiZmYtNzJiNjViNDlhOTEwIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+            target="_blank" class="">
             <i class="fa-solid fa-eye"></i>Visualizar
           </a>
         </div>
@@ -270,8 +303,8 @@
       <div class="empresa">
         <div class="card-imagem">
           <div class="iframe-container">
-            <img src="assets/img/img-dashboards/012-vendas-sazonalidade/receita-sazonal-ds.png"
-              frameborder="0" allowFullScreen="true"></img>
+            <img src="assets/img/img-dashboards/012-vendas-sazonalidade/receita-sazonal-ds.png" frameborder="0"
+              allowFullScreen="true"></img>
           </div>
         </div>
         <div class="card-info">
@@ -287,7 +320,8 @@
             <li>FIGMA</li>
             <li>DAX</li>
           </ul>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiMjQ3NGIxYmQtYmI3OC00ZGQyLTkwYTEtNjg2OGJhMGNiOGJkIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9" target="_blank" class="">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiMjQ3NGIxYmQtYmI3OC00ZGQyLTkwYTEtNjg2OGJhMGNiOGJkIiwidCI6IjQ3M2RhZThlLTg2M2MtNDE2NS1hMGE2LTk0MTA4YzhkM2UwZCJ9"
+            target="_blank" class="">
             <i class="fa-solid fa-eye"></i>Visualizar
           </a>
         </div>

@@ -8,10 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Steller landing page.">
     <meta name="author" content="Fellipe Melo">
-    <meta name="description" content="O site trata-se de um portfólio de Análise de Dados e BI de Fellipe Melo, com projetos autorais e projetos realizados em cursos com cases de negócios.">
+    <meta name="description"
+        content="O site trata-se de um portfólio de Análise de Dados e BI de Fellipe Melo, com projetos autorais e projetos realizados em cursos com cases de negócios.">
 
     <title>Fellipe Melo</title>
     <!-- font icons -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap JS, jQuery e Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 
@@ -24,49 +32,45 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top logo" data-spy="affix" data-offset-top="0" style="background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e);
-  opacity: 0.95;">
+    <nav class="navbar navbar-expand-lg fixed-top logo" data-spy="affix" data-offset-top="0"
+        style="background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)), linear-gradient(0deg, #2e2e2e, #2e2e2e); opacity: 0.95;">
         <div class="container">
-            <img class="header-img" src="assets/img/img-icons/logo.png" alt="">
+            <img class="header-img" src="assets/img/img-icons/logo.png" alt="Logo">
 
+            <!-- Botão de Navegação Mobile -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                <div class="div-slider"></div>
             </button>
 
+            <!-- Links de Navegação -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#formacao">Formação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 </ul>
-            </div>
-            <div class="logo">
-                <a href="#"></a>
             </div>
         </div>
     </nav>
 
-    <!-- End of page navibation -->
+    <script>
+        $(document).ready(function () {
+            // Alternar o menu ao clicar no botão navbar-toggler
+            $('.navbar-toggler').on('click', function () {
+                $('#navbarSupportedContent').collapse('toggle');
+            });
 
-    <!-- Page Header -->
+            // Fechar o menu quando clicar em um link do menu
+            $('.navbar-nav>li>a').on('click', function () {
+                $('#navbarSupportedContent').collapse('hide');
+            });
+        });
+    </script>
+
     <header class="header" id="home">
         <div class="container">
             <div class="infos">
@@ -90,7 +94,7 @@
                 </div>
             </div>
             <div class="img-holder">
-                <img src="assets/img/img-profile/Fellipe.png" alt="foto de perfil">
+                <img src="assets/img/img-profile/profile-img.png" alt="foto de perfil">
             </div>
         </div>
 
@@ -156,6 +160,46 @@
         </div>
     </section>
 
+    <!--
+    <section id="experiencias" class="section">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <span class="year">2020 - 2023</span>
+                        <div class="description">Vert Integradora de TI - Técnico de Help Desk e NOC, suporte técnico e
+                            monitoramento.</div>
+                    </div>
+                    <div class="timeline-item right">
+                        <span class="year">2022 - 2024</span>
+                        <div class="description">Datama - Analista de Suporte, resolução de problemas, e atendimento a
+                            clientes.</div>
+                    </div>
+                    <div class="timeline-item left">
+                        <span class="year">2022 - 2023</span>
+                        <div class="description">Saitec - Analista de Suporte, monitoramento de redes e atendimento a
+                            clientes.</div>
+                    </div>
+                    <div class="timeline-item right">
+                        <span class="year">2023</span>
+                        <div class="description">Conselho Regional de Psicologia - Atividades de suporte e TI.</div>
+                    </div>
+                    <div class="timeline-item left">
+                        <span class="year">2023 - 2024</span>
+                        <div class="description">UB TECH - Assistente de TI, Analista de Dados e Business Intelligence.
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <span class="year">2024</span>
+                        <div class="description">DSS - Participação em projetos e atividades de suporte e análise de
+                            dados.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
     <section id="about" class="section">
         <div class="container mt-5">
             <div class="row text-center text-md-left">
@@ -207,7 +251,8 @@
                 </div>
                 <div class="card-info">
                     <h5 class="curso-tipo">Dashboards</h5>
-                    <p class="empresa-descricao">Dashboards desenvolvidos com FIGMA, EXCEL, POWER BI, SQL. Com uso de funções DAX para medidas matemáticas e métricas.
+                    <p class="empresa-descricao">Dashboards desenvolvidos com FIGMA, EXCEL, POWER BI, SQL. Com uso de
+                        funções DAX para medidas matemáticas e métricas.
                     </p>
                     <ul class="empresa-habilidades">
                         <li>EXCEL</li>
@@ -218,7 +263,7 @@
                     <a href="./dashboards.html" target="_blank" class="">
                         <i class="fa-solid fa-magnifying-glass"></i></i>
                         Ver detalhes
-                    </a> 
+                    </a>
                 </div>
             </div>
 
@@ -240,10 +285,10 @@
                         <li>Pandas</li>
                         <li>Matplotlib</li>
                     </ul>
-                    <a href="https://github.com/Fellipe-dotmelo/analiseDados" class="">
+                    <a href="https://github.com/Fellipe-dotmelo/analiseDados" target="_blank" class="">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         Ver detalhes
-                    </a> 
+                    </a>
                 </div>
             </div>
 
@@ -264,10 +309,10 @@
                         <li>SQL</li>
                         <li>MODELAGEM</li>
                     </ul>
-                    <a href="#" class="">
+                    <a href="https://github.com/Fellipe-dotmelo/SQL" target="_blank" class="">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         Ver detalhes
-                    </a>                      
+                    </a>
                 </div>
             </div>
 
